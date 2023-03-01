@@ -17,7 +17,11 @@ function App() {
         </div>
         <div className="texts">
         <h2>Connect with Mayfield, JETRO, Toptal and more at TechCrunch Disrupt</h2>
-          <p>Mark your calendars, startup fans, because TechCrunch is returning — live and in person — to the beautiful City by the Bay to host our flagship event, TechCrunch Disrupt, on October 18–20 at the Moscone West Convention Center followed by an online recap event on October 21.</p>
+          <p className="info">
+            <a className="author" >Author_name</a>
+            <time>2023-02-28 16:45</time>
+          </p>
+          <p className="summary">Mark your calendars, startup fans, because TechCrunch is returning — live and in person — to the beautiful City by the Bay to host our flagship event, TechCrunch Disrupt, on October 18–20 at the Moscone West Convention Center followed by an online recap event on October 21.</p>
         </div>
       </div>
       <div className="post">
@@ -26,7 +30,11 @@ function App() {
         </div>
         <div className="texts">
         <h2>Connect with Mayfield, JETRO, Toptal and more at TechCrunch Disrupt</h2>
-          <p>Mark your calendars, startup fans, because TechCrunch is returning — live and in person — to the beautiful City by the Bay to host our flagship event, TechCrunch Disrupt, on October 18–20 at the Moscone West Convention Center followed by an online recap event on October 21.</p>
+          <p className="info">
+            <a className="author" >Author_name</a>
+            <time>2023-02-28 16:45</time>
+          </p>
+          <p className="summary">Mark your calendars, startup fans, because TechCrunch is returning — live and in person — to the beautiful City by the Bay to host our flagship event, TechCrunch Disrupt, on October 18–20 at the Moscone West Convention Center followed by an online recap event on October 21.</p>
         </div>
       </div>
       <div className="post">
@@ -35,7 +43,11 @@ function App() {
         </div>
         <div className="texts">
         <h2>Connect with Mayfield, JETRO, Toptal and more at TechCrunch Disrupt</h2>
-          <p>Mark your calendars, startup fans, because TechCrunch is returning — live and in person — to the beautiful City by the Bay to host our flagship event, TechCrunch Disrupt, on October 18–20 at the Moscone West Convention Center followed by an online recap event on October 21.</p>
+          <p className="info">
+            <a className="author" >Author_name</a>
+            <time>2023-02-28 16:45</time>
+          </p>
+          <p className="summary">Mark your calendars, startup fans, because TechCrunch is returning — live and in person — to the beautiful City by the Bay to host our flagship event, TechCrunch Disrupt, on October 18–20 at the Moscone West Convention Center followed by an online recap event on October 21.</p>
         </div>
       </div>
       
