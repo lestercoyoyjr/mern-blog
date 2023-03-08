@@ -1,14 +1,14 @@
-import {userState} from "react";
+import {useState} from "react";
 
 export default function RegisterPage() {
-    const [username, setUsername] = userState('');
-    const [password, setPassword] = userState('');
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
     async function register(ev){
         ev.preventDefault();
         await fetch('http://localhost:4000/register', {
             method: 'POST',
             body: JSON.stringify({username, password}),
-            headers: {'Content-type':'application/json'}
+            headers: {'Content-type':'application/json'},
         })
     }
 
