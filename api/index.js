@@ -3,7 +3,7 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors());
-api.use(express.json());
+app.use(express.json());
 
 app.post('/register', (req,res) => {
     const {username,password} = req.body;
