@@ -25,7 +25,12 @@ app.post('/register', async (req,res) => {
     } catch (e) {
         res.status(400).json(e);
     }
-    
 })
+
+app.post('/login', async (req,res) => {
+    const{username, password} = req.body;
+    const userDoc = await User.findOne({username});
+    res.json(userDoc);
+});
 
 app.listen(4000)
