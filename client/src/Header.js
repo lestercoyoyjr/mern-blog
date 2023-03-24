@@ -6,7 +6,7 @@ export default function Header() {
     fetch('http://localhost:4000/profile', {
       credentials: 'include', 
     })
-  }, [])
+  }, []);
   return (
     <header>
       <Link to="/" className="logo"> MyBlog </Link>
