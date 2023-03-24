@@ -6,16 +6,20 @@ const User = require('./models/User');
 const bcrypt = require('bcryptjs');
 const app = express();
 const jwt = require('jsonwebtoken');
+const cookieParser = require('cookie-parser');
 
 // in order to encrypt password
 const salt = bcrypt.genSaltSync(10);
 const secret = 'sdfio43rm0934lkds2340fdsga';
 
+// Middlewares
 app.use(cors({credentials:true, origin:'http://localhost:3000'}));
 app.use(express.json());
+app.use(cookieParser());
 
 mongoose.connect(process.env.MONGODB_URI);
 
+// Routes
 app.post('/register', async (req,res) => {
     const {username,password} = req.body;
     try {
@@ -43,6 +47,10 @@ app.post('/login', async (req,res) => {
     } else {
         res.status(400).json('wrong credentials')
     }
+});
+
+app.get('/profile', (req,res) => {
+    res.json(req.cookies);
 });
 
 app.listen(4000)
