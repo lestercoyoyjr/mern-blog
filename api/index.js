@@ -13,9 +13,15 @@ const salt = bcrypt.genSaltSync(10);
 const secret = 'sdfio43rm0934lkds2340fdsga';
 
 // Middlewares
-app.use(cors({credentials:true, origin:'http://localhost:3000'}));
+const corsOptions = {
+    credentials: true,
+    origin: true
+  };
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
+ 
 
 mongoose.connect(process.env.MONGODB_URI);
 
