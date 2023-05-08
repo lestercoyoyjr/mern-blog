@@ -59,4 +59,9 @@ app.get('/profile', (req,res) => {
     res.json(req.cookies);
 });
 
+// test everything is ok
+app.get('/test', (req,res) => {
+    res.json('test OK');
+});
+
 app.listen(4000)
