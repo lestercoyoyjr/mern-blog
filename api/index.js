@@ -12,13 +12,8 @@ const cookieParser = require('cookie-parser');
 const salt = bcrypt.genSaltSync(10);
 const secret = 'sdfio43rm0934lkds2340fdsga';
 
-// Middlewares
-const corsOptions = {
-    credentials: true,
-    origin: true
-  };
 
-app.use(cors(corsOptions));
+app.use(cors({credentials:true,origin:'http://localhost:3000'}));
 app.use(express.json());
 app.use(cookieParser());
  
