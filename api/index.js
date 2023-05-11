@@ -56,7 +56,6 @@ app.get('/profile', (req,res) => {
         if(err) throw err;
         res.json(info);
     })
-    res.json(req.cookies);
 });
 
 // test everything is ok
