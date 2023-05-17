@@ -18,6 +18,7 @@ export default function Header() {
       credentials: 'include',
       method: 'POST',
     })
+    setUsername(null);
   }
 
   return (
