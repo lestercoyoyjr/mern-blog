@@ -58,6 +58,10 @@ app.get('/profile', (req,res) => {
     })
 });
 
+app.post('/logout', (req,res) => {
+    res.cookie('token', '').json('ok');
+});
+
 // test everything is ok
 app.get('/test', (req,res) => {
     res.json('test OK');

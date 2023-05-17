@@ -12,6 +12,14 @@ export default function Header() {
       });
     });
   }, []);
+
+  function logout() {
+    fetch('http://localhost:4000/logout', {
+      credentials: 'include',
+      method: 'POST',
+    })
+  }
+
   return (
     <header>
       <Link to="/" className="logo"> MyBlog </Link>
